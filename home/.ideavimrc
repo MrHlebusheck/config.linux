@@ -1,0 +1,3 @@
+imap jk <Esc>
+imap jj <Esc>
+set timeoutlen=200

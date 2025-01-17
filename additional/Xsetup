@@ -1,0 +1,7 @@
+#!/bin/sh
+# Xsetup - run as root before the login dialog appears
+
+if xrandr | grep "HDMI-1-0 connected"
+then
+	xrandr --output eDP-1 --off --output HDMI-1-0 --primary --auto
+fi

@@ -1,0 +1,79 @@
+configuration {
+	modi:                       "drun";
+    show-icons:                 true;
+    display-drun:               " ";
+	drun-display-format:        "{name}";
+}
+
+* {
+    font:   "Fira Code 20";
+
+    background-color:   @backgroundPrimary;
+    text-color:         @text;
+
+    margin:     0px;
+    padding:    0px;
+    spacing:    0px;
+
+    backgroundPrimary:    #1e1e1e;
+    backgroundSecondary:    #2d2d2d;
+    border:    #0A7ACA;
+    text:    #d4d4d4;
+}
+
+window {
+    location:       center;
+    width:          960;
+    border-radius:  0px;
+    
+    background-color:   @backgroundPrimary;
+}
+
+mainbox {
+    padding:    12px;
+}
+
+inputbar {
+    background-color:   @backgroundPrimary;
+    border-color:       @border;
+
+    border:         4px;
+    border-radius:  0px;
+
+    padding:    8px 16px;
+    spacing:    8px;
+}
+
+listview {
+    background-color:   @backgroundPrimary;
+    margin:     12px 0 0;
+    lines:      8;
+    columns:    2;
+    fixed-height: false;
+}
+
+element {
+    padding:        8px 16px;
+    spacing:        8px;
+    border-radius:  0px;
+    border: 4px;
+    background-color: @backgroundPrimary;
+}
+
+element selected normal, element selected active {
+    border-color:   @border;
+    background-color: @backgroundSecondary;
+}
+
+element-icon selected normal, element-text selected normal {
+    background-color: @backgroundSecondary;
+}
+
+element-icon {
+    size:           1em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color: inherit;
+}
