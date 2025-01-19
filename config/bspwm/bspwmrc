@@ -6,6 +6,7 @@ xsetroot -cursor_name left_prt &
 xrdb ~/.Xresources
 ~/.config/scripts/startdunst.sh &
 setxkbmap 'us,ru' -option 'grp:caps_toggle'
+pgrep -x parcellite > /dev/null || parcellite &
 picom &
 xset -dpms
 xset s off 

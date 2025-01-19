@@ -7,9 +7,6 @@ alt + f
 alt + e
 	nemo
 
-alt + v
-  clipcat-menu
-
 alt + space
 	~/.config/rofi/menu.sh
 
