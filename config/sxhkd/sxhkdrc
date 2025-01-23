@@ -1,13 +1,13 @@
-alt + Return
+Alt_R; Return
 	kitty
 
-alt + f
+Alt_R; f
 	firefox
 
-alt + e
+Alt_R; e
 	nemo
 
-alt + space
+Alr_r; space
 	~/.config/rofi/menu.sh
 
 super + alt + p
@@ -34,7 +34,7 @@ XF86AudioMute
 {XF86MonBrightnessDown, XF86MonBrightnessUp}
   light -{U,A} 5
 
-alt + {r,shift+r}
+Alr_R; {r,shift+r}
 	bspc node @/ -C {forward,backward}
 
 super + alt + s
@@ -46,7 +46,7 @@ super + alt + {q,r}
 alt + shift + {q,w} 
 	bspc node -{c,k}
 
-alt + s
+Alt_R; s
 	bspc desktop -l next
 
 alt + shift + g
@@ -58,7 +58,7 @@ alt + shift + {t,p,s,f}
 alt + shift + m
   bspc node focused.local --to-monitor next
 
-alt + m
+Alt_R; m
   bspc monitor --focus next
   
 alt + {_,shift + }{h,j,k,l}
