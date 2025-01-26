@@ -7,7 +7,7 @@ Alt_R; f
 Alt_R; e
 	nemo
 
-Alr_r; space
+Alt_R; space
 	~/.config/rofi/menu.sh
 
 super + alt + p
