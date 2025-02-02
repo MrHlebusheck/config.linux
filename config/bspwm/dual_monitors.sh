@@ -1,7 +1,7 @@
 #! /bin/sh
 
-feh --bg-fill ~/.config/bspwm/wallpaper_4k.jpg \
-    --bg-fill ~/.config/bspwm/wallpaper_fullhd_vertical.jpg
+feh --bg-fill ~/.config/bspwm/wallpaper.jpg \
+    --bg-fill ~/.config/bspwm/wallpaper_cat.png
 
 bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 10
 bspc monitor eDP-1-1 -d 11 12 13 14 15 16 17 18 19 20
