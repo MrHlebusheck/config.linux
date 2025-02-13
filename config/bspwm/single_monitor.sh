@@ -9,7 +9,6 @@ bspc config window_gap 0
 
 bspc config single_monocle	     true
 
-bspc rule -a WebApp-YTMusic4205 follow=false desktop="^9"
 bspc rule -a TelegramDesktop state=floating follow=true desktop="^10"
 
 ~/.config/polybar/start_single.sh &

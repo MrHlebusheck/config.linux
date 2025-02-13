@@ -14,8 +14,6 @@ bspc config -m eDP-1-1 window_gap 4
 
 bspc config single_monocle false
 
-bspc rule -a WebApp-YTMusic4205 follow=true desktop="^19"
 bspc rule -a TelegramDesktop follow=true desktop="^20"
-bspc rule -a light-controll state=floating
 
 ~/.config/polybar/start_dual.sh &

@@ -43,31 +43,31 @@ super + alt + s
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-alt + shift + {q,w} 
+super + shift + {q,w} 
 	bspc node -{c,k}
 
 Alt_R; s
 	bspc desktop -l next
 
-alt + shift + g
+super + shift + g
 	bspc node -s biggest.window
 
-alt + shift + {t,p,s,f}
+super + shift + {t,p,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-alt + shift + m
+super + shift + m
   bspc node focused.local --to-monitor next
 
 Alt_R; m
   bspc monitor --focus next
   
-alt + {_,shift + }{h,j,k,l}
+super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-alt + {_,shift + }{1-9,0}
+super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-alt + {_,shift + }{F1,F2,F3,F4,F5,F6,F7,F8,F9,F10}
+super + {_,shift + }{F1,F2,F3,F4,F5,F6,F7,F8,F9,F10}
 	bspc {desktop -f,node -d} '^{11,12,13,14,15,16,17,18,19,20}'
 
 super + ctrl + {h,j,k,l}
