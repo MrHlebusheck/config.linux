@@ -6,6 +6,9 @@ SAVEHIST=1000
 alias e='nvim'
 
 export MANPAGER='nvim +Man!'
+export VCPKG_ROOT=~/.vcpkg
+export PATH=$VCPKG_ROOT:$PATH
+
 
 autoload -U colors compinit
 zstyle ':completion:*' menu select
