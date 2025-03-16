@@ -1,0 +1,29 @@
+* {
+  all: unset;
+  font-family: "FiraCode";
+  font-size: 150px;
+  text-align: right;
+}
+
+#window {
+  background-color: #1E1E1E;
+}
+
+#outer-box {
+  background-color: #1E1E1E;
+  border: 2px solid #FAB387;
+  border-radius: 10px;
+}
+
+#entry {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  color: #9699b7;
+  border-radius: 8px;
+}
+
+#entry:selected {
+  background-color: #303241;
+  color: #d9e0ee;
+}
+

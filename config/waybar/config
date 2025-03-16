@@ -1,7 +1,7 @@
 {
-  "position": "bottom",
+  "position": "top",
   "height": 30,
-  "width": 3820,
+  "width": 3840,
   "spacing": 4,
   "margin-bottom": 5,
   "modules-left": [
@@ -22,7 +22,7 @@
     "custom/power"
   ],
   "custom/power": {
-    "on-click": "/home/hlebusheck/.config/scripts/powermenu.sh",
+    "on-click": "/home/hlebusheck/.config/scripts/wpowermenu.sh",
     "format": ""
   },
   "custom/colorpicker": {
