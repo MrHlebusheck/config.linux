@@ -6,7 +6,7 @@ chosen=$(echo -e "$options" | wofi -c ~/.config/wofi/power.conf -s ~/.config/wof
 
 case $chosen in
     " ⏻ ")
-        poweroff
+        shutdown now
         ;;
     "  ")
         reboot
