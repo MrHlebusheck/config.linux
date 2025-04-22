@@ -1,18 +1,20 @@
 {
   "position": "top",
   "height": 30,
-  "width": 3840,
+  "width": 3000,
+  "output": "HDMI-A-1",
   "spacing": 4,
   "margin-bottom": 5,
   "modules-left": [
-    "custom/activeworkspace",
+    "custom/hypr_mode",
     "hyprland/workspaces",
-    "custom/colorpicker"
+    "custom/colorpicker",
   ],
   "modules-center": [
     "hyprland/window"
   ],
   "modules-right": [
+    "tray",
     "hyprland/language",
     "pulseaudio",
     "network",
@@ -21,6 +23,16 @@
     "clock",
     "custom/power"
   ],
+  "custom/hypr_mode":{
+     "return-type": "text",
+     "exec": "$HOME/.config/hypr/scripts/mode.sh status",
+     "format": "{}",
+     "signal": 1
+  },
+  "tray": {
+      "icon-size": 21,
+      "spacing": 10
+  },
   "custom/power": {
     "on-click": "/home/hlebusheck/.config/scripts/wpowermenu.sh",
     "format": ""
@@ -35,7 +47,7 @@
     "signal" : 10 
   },
   "hyprland/workspaces": {
-    "format": "{windows}",
+    "format": "{name}: {windows}",
     "format-window-separator": " ",
     "window-rewrite-default": "󱕷",
     "window-rewrite": {
@@ -59,14 +71,14 @@
     "format": "{title}"
   },
   "hyprland/language": {
-    "format": "  {}",
+    "format": "{}",
     "format-en": "EN",
     "format-ru": "RU"
   },
   "clock": {
     "interval": 1,
-    "format": " {:%H:%OM:%OS}",
-    "format-alt": " {:%Od.%Om.%Oy}"
+    "format": "{:%H:%OM:%OS}",
+    "format-alt": "{:%Od.%Om.%Oy}"
   },
   "battery": {
     "states": {
@@ -89,7 +101,7 @@
     ]
   },
   "network": {
-    "format-wifi": "  {essid} - {signalStrength}%",
+    "format-wifi": "{essid} - {signalStrength}%",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
@@ -98,10 +110,10 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon} {volume}%",
+    "format": "V: {volume}%",
     "format-bluetooth": "{volume}% {icon} ",
     "format-bluetooth-muted": " {icon} ",
-    "format-muted": " ",
+    "format-muted": "M",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {

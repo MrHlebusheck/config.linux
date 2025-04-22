@@ -1,0 +1,2 @@
+MODE_FILE="/tmp/HLEBUSHECK_HYPR_MODE"
+HYPR_PATH="$HOME/.config/hypr"

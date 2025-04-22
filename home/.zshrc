@@ -8,11 +8,13 @@ alias e='nvim'
 export MANPAGER='nvim +Man!'
 export VCPKG_ROOT=~/.vcpkg
 export PATH=$VCPKG_ROOT:$PATH
+export EDITOR=vim
 
 
 autoload -U colors compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*'  list-colors '=*=96'
+zstyle ':completion:*' rehash true
 colors
 compinit
 
