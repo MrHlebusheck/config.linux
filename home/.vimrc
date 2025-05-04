@@ -12,3 +12,5 @@ set autoindent
 set expandtab
 set relativenumber
 
+syntax on
+filetype plugin indent on
