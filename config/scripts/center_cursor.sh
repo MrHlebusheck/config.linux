@@ -7,7 +7,7 @@ function xinfo {
 id=$(bspc query -N -n)
 
 if [ $? -ne 0 ]; then
-  return 0
+  exit 0
 fi
 
 x=$(xinfo | grep "Absolute upper-left X:" | cut -d ":" -f2)

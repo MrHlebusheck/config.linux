@@ -3,6 +3,7 @@
 . ~/.config/bspwm/scripts/display.sh
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x picom > /dev/null || picom &
+pgrep -x parcellite > /dev/null || parcellite &
 xsetroot -cursor_name  left_ptr
 xrdb ~/.Xresources
 setxkbmap 'us,ru' -option 'grp:caps_toggle'
