@@ -1,0 +1,4 @@
+(deflisten w_title `scripts/title.sh`)
+(defwidget window_title []
+  (literal :content "${w_title}")  
+)

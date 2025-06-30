@@ -1,0 +1,21 @@
+(defpoll time :initial '{"time": "", "date":""}'
+  :interval "1s" `date +'{"time": "%H:%M:%S", "date":"%d.%m.%Y"}'`)
+(defvar time_rev false)
+
+(defwidget clock []
+  (eventbox 
+    :onhover "${EWW_CMD} update time_rev=true"
+    :onhoverlost "${EWW_CMD} update time_rev=false"  
+    (box :orientation "h" :space-evenly false
+      (label :class "clock" :text "${time.time}") 
+      (revealer :transition "slideleft"
+          :reveal time_rev
+          :duration "350ms"
+        (box :space-evenly false
+          (separator)
+          (label :class "date" :text "${time.date}")
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,10 @@
+(deflisten ws_hdmi `scripts/workspaces.sh HDMI-0`)
+(deflisten ws_edp `scripts/workspaces.sh eDP-1-1`)
+
+(defwidget workspaces_hdmi []
+  (literal :content "${ws_hdmi}")
+)
+
+(defwidget workspaces_edp []
+  (literal :content "${ws_edp}")
+)

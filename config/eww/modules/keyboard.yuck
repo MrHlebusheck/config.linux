@@ -1,0 +1,5 @@
+(deflisten k_layout `scripts/keyboard_layout.py`)
+(defwidget keyboard_layout []
+  (literal :content "${k_layout}")
+)
+

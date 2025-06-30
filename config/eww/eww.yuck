@@ -1,0 +1,41 @@
+(include "./modules/others.yuck")
+(include "./modules/workspaces.yuck")
+(include "./modules/title.yuck")
+(include "./modules/keyboard.yuck")
+(include "./modules/clock.yuck")
+(include "./modules/volume.yuck")
+
+(defwidget bar_left_part []
+  (box :halign "start" :valign "center"
+    (workspaces_hdmi)
+  )
+)
+(defwidget bar_center_part []
+  (box :valign "center"
+    (window_title)
+  )
+)
+(defwidget bar_right_part []
+  (box :halign "end" :valign "center" :space-evenly false :spacing 10
+    (volume)
+    (keyboard_layout)
+    (clock)
+  )
+)
+
+(defwindow topbar []
+  :geometry (geometry :x "0%"
+                      :y "4px"
+                      :width "99.2%"
+                      :height "30px"
+                      :anchor "top center")
+  :stacking "bg"
+  :reserve (struts :distance "30px" :side "top")
+  :windowtype "dock"
+  :wm-ignore false
+  (box :orientation "h" :class "bar"
+    (bar_left_part)
+    (bar_center_part)
+    (bar_right_part)
+  )
+)

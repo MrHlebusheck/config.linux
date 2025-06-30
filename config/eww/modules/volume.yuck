@@ -1,0 +1,19 @@
+(deflisten current_volume `scripts/volume.sh`)
+(defvar volume_rev false)
+
+(defwidget volume []
+  (eventbox
+    :onhover `${EWW_CMD} update volume_rev=true`
+    :onhoverlost `${EWW_CMD} update volume_rev=false`
+    (box :space-evenly false
+      (revealer :transition "slideleft" :reveal volume_rev :duration "350ms"
+        (label :class "volume" :text "${current_volume.volume}")
+      )
+     (label :text "${ current_volume.muted ? '󰖁' : 
+                        current_volume.volume > 70 ? '󰕾' : 
+                        current_volume.volume > 35 ? '󰖀' : 
+                        '󰕿' }"
+      )
+    )
+  )
+)

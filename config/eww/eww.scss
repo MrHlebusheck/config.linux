@@ -1,0 +1,73 @@
+$tn-bg:          #1a1b26; // background
+$tn-fg:          #c0caf5; // foreground (main text)
+$tn-comment:     #565f89; // comment / muted text
+
+$tn-blue:        #7aa2f7; // neon blue
+$tn-cyan:        #7dcfff; // electric cyan
+$tn-purple:      #bb9af7; // violet / purple
+$tn-pink:        #f7768e; // pink / red neon
+$tn-orange:      #ff9e64; // bright orange
+$tn-yellow:      #e0af68; // warm yellow
+$tn-green:       #9ece6a; // soft green
+
+$tn-accent:      #414868; // deep accent (used for borders/panels)
+$tn-highlight:   #33467c; // highlight or hover state
+
+
+
+
+* { all: unset; }
+
+.bar{
+  background: $tn-bg; 
+  padding: 0 0.5em;
+  border-radius: 4px;
+}
+
+.workspaces-box {
+  font-family: Phosphor;
+  font-size: 1.5em;
+
+  .ws-unoccupied {
+    color: $tn-accent;
+  }
+  .ws-occupied {
+    color: $tn-fg;
+  }
+  .ws-focused {
+    color: $tn-pink;
+  }
+}
+
+.clock,
+.date {
+  font-family: Fira Code;
+  font-size: 1.5em;
+  color: $tn-pink;
+}
+.date {
+  color: $tn-blue
+}
+.separator{
+  font-family: Fira Code;
+  font-size: 1.5em;
+  margin: 0 4px;
+}
+
+.window-title {
+  font-family: Fira Code;
+  font-size: 1.5em;
+  color: $tn-fg;
+}
+
+.keyboard-layout{
+  font-family: Fira Code;
+  font-size: 1.5em;
+  color: $tn-cyan;
+}
+
+.volume {
+  font-family: Fira Code;
+  font-size: 1.5em;
+  color: $tn-orange;
+}
