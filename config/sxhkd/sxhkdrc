@@ -40,6 +40,9 @@ super + shift + g
 super + shift + m
   bspc node focused.local --to-monitor next
 
+super + shift + n
+  bspc node -n $(bspc query -T -d | jq -r '.. | objects | select(has("presel")) | select(.presel != null) | .id')
+
 super + m
   bspc monitor --focus next
 
