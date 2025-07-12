@@ -64,6 +64,9 @@ super + ctrl + space
 Menu
   flameshot gui
 
+super + Menu
+  boomer
+
 XF86AudioMute
   pamixer -t
 
